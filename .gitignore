@@ -31,7 +31,5 @@
 *.out
 *.app
 /.vs/cmd-player
-/cmd-player/x64/Debug
-/x64/Release
-/cmd-player/x64/Release/cmd-player.tlog
-/cmd-player/x64/Release
+/cmd-player/*
+/x64/*

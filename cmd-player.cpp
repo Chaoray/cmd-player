@@ -157,6 +157,11 @@ int main(int argc, char** argv) {
         }
         next = std::chrono::high_resolution_clock::now() + delay;
 
+        if (GetAsyncKeyState(VK_ESCAPE) & 0x8000) [[unlikely]]
+            break;
+        if (GetAsyncKeyState(0x51) & 0x8000) [[unlikely]] // Q
+            break;
+
         // fps counter
         fps_end = std::chrono::high_resolution_clock::now();
         fps = 1e9 / (fps_end - fps_start).count();

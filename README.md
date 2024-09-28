@@ -1,13 +1,16 @@
-# cmd-player
+# Terminal Video Player
 
-A simple command line video player.   
-It uses opencv as decoder and uses winapi to boost drawing performance.  
-Also using multithreading to decode and draw at the same time.
+"What if we can use terminal to play videos?"  
+After viewing some ascii art, I found out that images can be rendered into ascii art.  
+Images can achieve this, so should videos.  
 
-Most of the time it can keep up with the video frame rate.  
-However, it may drop frames when the render size is too large.
-
-You can zoom in and out by changing the size of your console.
+# Features
+- Relative Luminance
+- Multithreading
+- Busy Waiting
+- Auto Zooming
+- High Draw Performance
+- 70 kinds of Gray
 
 ## Usage
 ```shell
